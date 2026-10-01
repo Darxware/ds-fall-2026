@@ -8,7 +8,7 @@ st.title("🎬 MovieLens Dashboard")
 
 @st.cache_data
 def load():
-    df = pd.read_csv("data/movie_ratings.csv")
+    df = pd.read_csv("movie_ratings.csv")
     df["genre_list"] = df["genres"].str.split("|")
     return df
 
